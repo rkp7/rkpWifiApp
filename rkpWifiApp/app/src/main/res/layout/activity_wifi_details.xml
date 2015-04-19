@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical"
+    tools:context=".WifiDetails"
+    android:id="@+id/wifiLinear">
+
+    <!-- For enabling scrolling for displayed text-->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    <!-- Linear layout for content to be displayed -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <!-- To display signal strength in terms of wifi signal image -->
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/ImageView1"
+            />
+
+        <!-- To display text "SSID OF NETWORK" -->
+        <TextView android:text="@string/network_detail_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+        <!-- To display the ssid value for network -->
+        <TextView
+            android:id="@+id/ssid"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <!-- To display text "BSSID OF NETWORK" -->
+        <TextView
+            android:text="@string/network_detail_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+        <!-- To display the bssid value for network -->
+        <TextView
+            android:id="@+id/bssid"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <!-- To display text "MAC ADDRESS" -->
+        <TextView
+            android:text="@string/network_detail_6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+        <!-- To display the MAC address value for network -->
+        <TextView
+            android:id="@+id/MAC"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <!-- To display text "RSSI LEVEL OF NETWORK" -->
+        <TextView
+            android:text="@string/network_detail_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+        <!-- To display the rssi value for network -->
+        <TextView
+            android:id="@+id/rssi"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <!-- To display text "QUALITY OF NETWORK" -->
+        <TextView
+            android:text="@string/network_detail_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+        <!-- To display the quality value for network -->
+        <TextView
+            android:id="@+id/quality"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <!-- To display text "LINK SPEED OF NETWORK" -->
+        <TextView
+            android:text="@string/network_detail_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+        <!-- To display the link speed value for network -->
+        <TextView
+            android:id="@+id/speed"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <!-- For displaying refresh button -->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:typeface="sans"
+            android:paddingTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Refresh"
+            android:drawableLeft="@mipmap/refresh"
+            android:background="@drawable/custom_button"
+            style="@style/button_text"
+            />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

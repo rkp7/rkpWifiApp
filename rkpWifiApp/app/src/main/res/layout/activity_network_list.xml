@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/home_bg_color"
+    android:orientation="vertical"
+    tools:context=".WifiDetails"
+    android:id="@+id/wifiLinear">
+
+    <!-- For enabling scrolling -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <!-- Linear layout for the content to be displayed -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+            <!-- Text view for displaying details of all wifi networks in range -->
+            <TextView
+                android:id="@+id/networkText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20dp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <!-- Back button -->
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:typeface="sans"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Back"
+                    android:drawableLeft="@mipmap/backarrow"
+                    android:background="@drawable/custom_button"
+                    style="@style/button_text"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

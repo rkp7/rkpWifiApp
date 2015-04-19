@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">The Wifi App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="network_error">Sorry, you are not connected to a Wifi network! Please connect to a Wifi Network first!</string>
+    <string name="wifi_error">Please enable your WIFI for detecting networks!</string>
+    <string name="network_detail_1">SSID of Network:</string>
+    <string name="network_detail_2">BSSID of Network:</string>
+    <string name="network_detail_3">RSSI level of Network:</string>
+    <string name="network_detail_4">Quality of Network:</string>
+    <string name="network_detail_5">Link Speed of Network:</string>
+    <string name="network_detail_6">MAC Address:</string>
+    <string name="action_settings">Settings</string>
+</resources>

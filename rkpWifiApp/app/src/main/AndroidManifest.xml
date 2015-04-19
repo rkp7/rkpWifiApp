@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rkp.rkpwifiapp" >
+
+    <!-- Required permissions for the application -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- The main activity for the home screen -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity for displaying the wifi details of only connected network -->
+        <activity
+            android:name=".wifi_details"
+            android:label="wifi_details">
+        </activity>
+
+        <!-- Activity for displaying an error message when device is not connected to a wifi network -->
+        <activity
+            android:name=".No_network"
+            android:label="no_network">
+        </activity>
+
+        <!-- Activity for displaying all the wifi networks in range -->
+        <activity
+            android:name=".Network_List"
+            android:label="network_list">
+        </activity>
+
+    </application>
+</manifest>
